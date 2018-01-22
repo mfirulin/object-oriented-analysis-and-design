@@ -16,7 +16,8 @@ public class Main {
         inventory.addGuitar("4", 1000.0, "", 6, Builder.MARTIN,
                 Type.ACOUSTIC, Wood.MAHOGANY, Wood.SPRUCE);
 
-        GuitarSpec spec = new GuitarSpec("Stratocaster", 6, Builder.FENDER, Type.ELECTRIC, Wood.ALDER, Wood.ALDER);
+        GuitarSpec spec = new GuitarSpec("Stratocaster", 6, Builder.FENDER, Type.ELECTRIC, Wood.ALDER,
+                Wood.ALDER);
 
         ArrayList<Guitar> guitars = inventory.search(spec);
 

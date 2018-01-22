@@ -10,7 +10,7 @@ public class GuitarSpec {
     private Wood backWood;
     private Wood topWood;
     
-    public GuitarSpec(String model, int numStrings, Builder builder, Type type, Wood backWood, Wood topWood) {
+    GuitarSpec(String model, int numStrings, Builder builder, Type type, Wood backWood, Wood topWood) {
         this.model = model;
         this.numStrings = numStrings;
         this.builder = builder;
@@ -19,14 +19,14 @@ public class GuitarSpec {
         this.topWood = topWood;
     }
 
-    public boolean equals(GuitarSpec other) {
+    boolean equals(GuitarSpec other) {
         if (other == null) return false;
         if (other == this) return true;
-        if (getClass() != other.getClass()) return false;
-        
-        return Objects.equals(model, other.model) && Objects.equals(numStrings, other.numStrings) &&
-                Objects.equals(builder, other.builder) && Objects.equals(type, other.type) &&
-                Objects.equals(backWood, other.backWood) && Objects.equals(topWood, other.topWood);
+
+        return getClass() == other.getClass() && Objects.equals(model, other.model) &&
+                Objects.equals(numStrings, other.numStrings) &&  Objects.equals(builder, other.builder) &&
+                Objects.equals(type, other.type) && Objects.equals(backWood, other.backWood) &&
+                Objects.equals(topWood, other.topWood);
     }
 
     public int hashCode() {
