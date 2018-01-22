@@ -24,7 +24,9 @@ public class GuitarSpec {
         if (other == this) return true;
         if (getClass() != other.getClass()) return false;
         
-        return Objects.equals(model, other.model);
+        return Objects.equals(model, other.model) && Objects.equals(numStrings, other.numStrings) &&
+                Objects.equals(builder, other.builder) && Objects.equals(type, other.type) &&
+                Objects.equals(backWood, other.backWood) && Objects.equals(topWood, other.topWood);
     }
 
     public int hashCode() {
@@ -32,8 +34,8 @@ public class GuitarSpec {
     }
 
     public String toString() {
-        return getClass().getName() + "[model=" + model + " builder=" + builder + " type=" + type +
-                " backWood=" + backWood + " topWood=" + topWood + "]";
+        return getClass().getName() + "[model=" + model + " numStrings=" + numStrings + " builder=" + builder +
+                " type=" + type + " backWood=" + backWood + " topWood=" + topWood + "]";
     }
 
     public String getModel() {
