@@ -14,7 +14,7 @@ public class DogDoorSimulator {
         System.out.println("Fido has gone outside...");
         System.out.println("Fido has all done...");
 //        System.out.println("Fido's back inside...");
-        System.out.println();
+//        System.out.println();
         try {
             Thread.currentThread().sleep(10000);
         }

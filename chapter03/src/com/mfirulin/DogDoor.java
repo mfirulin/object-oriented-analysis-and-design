@@ -5,16 +5,12 @@ import java.util.TimerTask;
 
 public class DogDoor {
     private boolean open = false;
-    private final Timer timer;
-
-    {
-        timer = new Timer();
-    }
 
     public void open() {
         System.out.println("The dog door opens");
         open = true;
 
+        final Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             public void run() {
                 close();
