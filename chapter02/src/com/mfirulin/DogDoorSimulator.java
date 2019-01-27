@@ -2,8 +2,8 @@ package com.mfirulin;
 
 public class DogDoorSimulator {
     public static void main(String[] args) {
-        DogDoor door = new DogDoor();
-        Remote remote = new Remote(door);
+        var door = new DogDoor();
+        var remote = new Remote(door);
 
         System.out.println("TC 1. Without delay");
         System.out.println("Fido barks to go outside...");
@@ -12,6 +12,7 @@ public class DogDoorSimulator {
         System.out.println("Fido has all done...");
         System.out.println("Fido's back inside...");
         System.out.println();
+
         try {
             Thread.currentThread().sleep(10000);
         }

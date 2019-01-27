@@ -10,7 +10,7 @@ public class DogDoor {
         System.out.println("The dog door opens");
         open = true;
 
-        final Timer timer = new Timer();
+        var timer = new Timer();
         timer.schedule(new TimerTask() {
             public void run() {
                 close();

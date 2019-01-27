@@ -1,6 +1,5 @@
 package com.mfirulin;
-
-import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -19,8 +18,7 @@ public class Main {
         GuitarSpec spec = new GuitarSpec("Stratocaster", 6, Builder.FENDER, Type.ELECTRIC, Wood.ALDER,
                 Wood.ALDER);
 
-        ArrayList<Guitar> guitars = inventory.search(spec);
-
+        var guitars = inventory.search(spec);
         System.out.println(guitars);
     }
 }

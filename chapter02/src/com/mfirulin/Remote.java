@@ -19,7 +19,7 @@ public class Remote {
         else {
             door.open();
 
-            final Timer timer = new Timer();
+            var timer = new Timer();
 
             timer.schedule(new TimerTask() {
                 public void run() {
