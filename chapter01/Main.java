@@ -1,11 +1,10 @@
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-	    Inventory inventory = new Inventory();
+	Inventory inventory = new Inventory();
 
-	    inventory.addGuitar("1", 1500.0, "Stratocaster", 6, Builder.FENDER,
+	inventory.addGuitar("1", 1500.0, "Stratocaster", 6, Builder.FENDER,
                 Type.ELECTRIC, Wood.ALDER, Wood.ALDER);
         inventory.addGuitar("2", 1600.0, "Stratocaster", 6, Builder.FENDER,
                 Type.ELECTRIC, Wood.ALDER, Wood.ALDER);
