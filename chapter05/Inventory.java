@@ -11,10 +11,11 @@ public class Inventory {
     public List<Instrument> search(InstrumentSpec spec) {
         List<Instrument> matchingInstruments = new ArrayList<>();
 
-        for (var entry: instruments)
-            if (entry.getSpec().equals(spec))
+        for (var entry: instruments) {
+            if (entry.getSpec().equals(spec)) {
                 matchingInstruments.add(entry);
-
+            }
+        }
         return matchingInstruments;
     }
 }

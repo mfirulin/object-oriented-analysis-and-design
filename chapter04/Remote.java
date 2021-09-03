@@ -10,8 +10,7 @@ public class Remote {
 
         if (door.isOpen()) {
             door.close();
-        }
-        else {
+        } else {
             door.open();
         }
     }

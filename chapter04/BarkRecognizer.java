@@ -15,13 +15,15 @@ public class BarkRecognizer {
 
     public void recognize(Bark bark) {
 
-        for (Bark item: allowedBarks)
+        for (Bark item: allowedBarks) {
             if (item.equals(bark)) {
                 System.out.println("BarkRecognizer: correct bark");
-                if (!door.isOpen())
+                if (!door.isOpen()) {
                     door.open();
+                }
                 return;
             }
+        }
 
         System.out.println("BarkRecognizer: incorrect bark");
     }

@@ -14,8 +14,7 @@ public class DogDoorSimulator {
 
         try {
             Thread.currentThread().sleep(10000);
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
         }
 
         System.out.println("Fido has all done...");
@@ -28,8 +27,7 @@ public class DogDoorSimulator {
 
         try {
             Thread.currentThread().sleep(5000);
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
         }
 
         System.out.println("TC 2. Correct bark 2");

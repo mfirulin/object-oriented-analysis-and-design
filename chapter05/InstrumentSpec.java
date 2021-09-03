@@ -6,17 +6,18 @@ public class InstrumentSpec {
     private Map<String, Object> properties;
 
     public InstrumentSpec(Map<String, Object> properties) {
-        if (properties == null)
+        if (properties == null) {
             this.properties = new HashMap<>();
-        else
+        } else {
             this.properties = new HashMap<>(properties);
+        }
     }
 
     public Object getProperty(String name) {
         return properties.get(name);
     }
 
-    public Map getProperties() {
+    public Map<String, Object> getProperties() {
         return properties;
     }
 
@@ -28,9 +29,11 @@ public class InstrumentSpec {
 
         InstrumentSpec otherSpec = (InstrumentSpec) other;
 
-        for (var key: otherSpec.properties.keySet())
-            if (!Objects.equals(properties.get(key), otherSpec.properties.get(key)))
+        for (var key: otherSpec.properties.keySet()) {
+            if (!Objects.equals(properties.get(key), otherSpec.properties.get(key))) {
                 return false;
+            }
+        }
         return true;
     }
 

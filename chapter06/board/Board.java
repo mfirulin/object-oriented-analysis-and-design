@@ -1,9 +1,8 @@
-package gsf.board;
+package board;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import gsf.unit.Unit;
+import unit.Unit;
 
 public class Board {
     private int width, height;

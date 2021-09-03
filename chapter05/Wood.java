@@ -5,5 +5,6 @@ public enum Wood {
     ROSEWOOD,
     SPRUCE,
     SITKA,
-    ADIRONDACK
+    ADIRONDACK,
+    ANY
 }

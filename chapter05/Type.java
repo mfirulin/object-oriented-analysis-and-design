@@ -1,4 +1,5 @@
 public enum Type {
     ACOUSTIC,
-    ELECTRIC
+    ELECTRIC,
+    ANY
 }

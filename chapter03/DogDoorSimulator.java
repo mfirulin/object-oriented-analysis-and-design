@@ -11,8 +11,7 @@ public class DogDoorSimulator {
 
         try {
             Thread.currentThread().sleep(10000);
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
         }
 
         System.out.println("... but he's stuck outside");

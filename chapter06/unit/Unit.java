@@ -1,4 +1,4 @@
-package gsf.unit;
+package unit;
 
 public class Unit {
 }

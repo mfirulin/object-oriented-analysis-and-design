@@ -55,7 +55,6 @@ public class Main {
         properties.remove("topWood");
         inventory.addInstrument("8900231", 2945.95, new InstrumentSpec(properties));
 
-
         // Search
         properties.clear();
         properties.put("builder", Builder.GIBSON);

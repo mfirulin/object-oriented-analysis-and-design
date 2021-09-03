@@ -4,5 +4,6 @@ public enum InstrumentType {
     DOBRO,
     FIDDLE,
     BASS,
-    MANDOLIN
+    MANDOLIN,
+    ANY
 }

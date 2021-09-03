@@ -13,8 +13,9 @@ public class Inventory {
         final var matchingGuitars = new ArrayList<Guitar>();
 
         for (Guitar guitar: guitars) {
-            if (spec.equals(guitar.getSpec()))
+            if (spec.equals(guitar.getSpec())) {
                 matchingGuitars.add(guitar);
+            }
         }
 
         return matchingGuitars;

@@ -1,8 +1,8 @@
-package gsf.board;
+package board;
 
 import java.util.LinkedList;
 import java.util.List;
-import gsf.unit.Unit;
+import unit.Unit;
 
 public class Tile {
     private List<Unit> units = new LinkedList<>();
